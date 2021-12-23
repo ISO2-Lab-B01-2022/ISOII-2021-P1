@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite tests="54" failures="0" name="org.isodos.b01.practicados_ejerciciouno.com.iso2b01.testingej1.TestEjercicio1" time="0.022" errors="0" skipped="0">
+  <properties>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_202\jre\bin"/>
+    <property name="java.vm.version" value="25.202-b08"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="maven.multiModuleProjectDirectory" value="C:\Users\sandr\Downloads\Proyecto\com.iso2b01.testingej1"/>
+    <property name="java.vendor.url" value="http://java.oracle.com/"/>
+    <property name="path.separator" value=";"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="user.script" value=""/>
+    <property name="user.country" value="ES"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="user.dir" value="C:\Users\sandr\Downloads\Proyecto\com.iso2b01.testingej1"/>
+    <property name="java.runtime.version" value="1.8.0_202-b08"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
+    <property name="java.endorsed.dirs" value="C:\Program Files\Java\jdk1.8.0_202\jre\lib\endorsed"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.io.tmpdir" value="C:\Users\sandr\AppData\Local\Temp\"/>
+    <property name="line.separator" value="
+"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.variant" value=""/>
+    <property name="os.name" value="Windows 10"/>
+    <property name="classworlds.conf" value="C:\Users\sandr\Downloads\apache-maven-3.8.4-bin\apache-maven-3.8.4\bin\m2.conf"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk1.8.0_202\bin;C:\windows\Sun\Java\bin;C:\windows\system32;C:\windows;C:/Users/sandr/.p2/pool/plugins/org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_15.0.2.v20210201-0955/jre/bin/server;C:/Users/sandr/.p2/pool/plugins/org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_15.0.2.v20210201-0955/jre/bin;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\windows\system32;C:\windows;C:\windows\System32\Wbem;C:\windows\System32\WindowsPowerShell\v1.0\;C:\windows\System32\OpenSSH\;C:\Program Files\dotnet\;C:\Users\sandr\Downloads\apache-maven-3.8.4-bin\apache-maven-3.8.4\bin;C:\Program Files\Java\jdk1.8.0_202\bin;C:\Users\sandr\AppData\Local\Microsoft\WindowsApps;C:\Users\sandr\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\sandr\.dotnet\tools;C:\Users\sandr\AppData\Local\GitHubDesktop\bin;C:\Users\sandr\Downloads\Proyecto\com.iso2b01.testingej1\src\test\java\org\isodos\b01\practicados_ejerciciouno\com\iso2b01\testingej1;;."/>
+    <property name="maven.conf" value="C:\Users\sandr\Downloads\apache-maven-3.8.4-bin\apache-maven-3.8.4/conf"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.class.version" value="52.0"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="os.version" value="10.0"/>
+    <property name="library.jansi.path" value="C:\Users\sandr\Downloads\apache-maven-3.8.4-bin\apache-maven-3.8.4\lib\jansi-native"/>
+    <property name="user.home" value="C:\Users\sandr"/>
+    <property name="user.timezone" value="Europe/Paris"/>
+    <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob"/>
+    <property name="java.specification.version" value="1.8"/>
+    <property name="file.encoding" value="Cp1252"/>
+    <property name="user.name" value="sandr"/>
+    <property name="java.class.path" value="C:\Users\sandr\Downloads\apache-maven-3.8.4-bin\apache-maven-3.8.4\boot\plexus-classworlds-2.6.0.jar"/>
+    <property name="java.vm.specification.version" value="1.8"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.home" value="C:\Program Files\Java\jdk1.8.0_202\jre"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher clean verify"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.language" value="es"/>
+    <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.version" value="1.8.0_202"/>
+    <property name="java.ext.dirs" value="C:\Program Files\Java\jdk1.8.0_202\jre\lib\ext;C:\windows\Sun\Java\lib\ext"/>
+    <property name="sun.boot.class.path" value="C:\Program Files\Java\jdk1.8.0_202\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_202\jre\lib\rt.jar;C:\Program Files\Java\jdk1.8.0_202\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.8.0_202\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_202\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_202\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_202\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_202\jre\classes"/>
+    <property name="sun.stderr.encoding" value="cp850"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="maven.home" value="C:\Users\sandr\Downloads\apache-maven-3.8.4-bin\apache-maven-3.8.4"/>
+    <property name="file.separator" value="\"/>
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="sun.stdout.encoding" value="cp850"/>
+    <property name="sun.desktop" value="windows"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+  </properties>
+  <testcase classname="org.isodos.b01.practicados_ejerciciouno.com.iso2b01.testingej1.TestEjercicio1" name="testPrincipal1" time="0.009"/>
+  <testcase classname="org.isodos.b01.practicados_ejerciciouno.com.iso2b01.testingej1.TestEjercicio1" name="testPrincipal2" time="0"/>
+  <testcase classname="org.isodos.b01.practicados_ejerciciouno.com.iso2b01.testingej1.TestEjercicio1" name="testPrincipal3" time="0.002"/>
+  <testcase classname="org.isodos.b01.practicados_ejerciciouno.com.iso2b01.testingej1.TestEjercicio1" name="testPrincipal4" time="0"/>
+  <testcase classname="org.isodos.b01.practicados_ejerciciouno.com.iso2b01.testingej1.TestEjercicio1" name="testPrincipal5" time="0.001"/>
+  <testcase classname="org.isodos.b01.practicados_ejerciciouno.com.iso2b01.testingej1.TestEjercicio1" name="testPrincipal6" time="0"/>
+  <testcase classname="org.isodos.b01.practicados_ejerciciouno.com.iso2b01.testingej1.TestEjercicio1" name="testPrincipal7" time="0"/>
+  <testcase classname="org.isodos.b01.practicados_ejerciciouno.com.iso2b01.testingej1.TestEjercicio1" name="testPrincipal8" time="0"/>
+  <testcase classname="org.isodos.b01.practicados_ejerciciouno.com.iso2b01.testingej1.TestEjercicio1" name="testPrincipal9" time="0.001"/>
+  <testcase classname="org.isodos.b01.practicados_ejerciciouno.com.iso2b01.testingej1.TestEjercicio1" name="testPrincipal10" time="0"/>
+  <testcase classname="org.isodos.b01.practicados_ejerciciouno.com.iso2b01.testingej1.TestEjercicio1" name="testPrincipal11" time="0"/>
+  <testcase classname="org.isodos.b01.practicados_ejerciciouno.com.iso2b01.testingej1.TestEjercicio1" name="testPrincipal12" time="0.001"/>
+  <testcase classname="org.isodos.b01.practicados_ejerciciouno.com.iso2b01.testingej1.TestEjercicio1" name="testPrincipal13" time="0"/>
+  <testcase classname="org.isodos.b01.practicados_ejerciciouno.com.iso2b01.testingej1.TestEjercicio1" name="testPrincipal14" time="0"/>
+  <testcase classname="org.isodos.b01.practicados_ejerciciouno.com.iso2b01.testingej1.TestEjercicio1" name="testPrincipal15" time="0"/>
+  <testcase classname="org.isodos.b01.practicados_ejerciciouno.com.iso2b01.testingej1.TestEjercicio1" name="testPrincipal16" time="0"/>
+  <testcase classname="org.isodos.b01.practicados_ejerciciouno.com.iso2b01.testingej1.TestEjercicio1" name="testPrincipal17" time="0"/>
+  <testcase classname="org.isodos.b01.practicados_ejerciciouno.com.iso2b01.testingej1.TestEjercicio1" name="testPrincipal18" time="0"/>
+  <testcase classname="org.isodos.b01.practicados_ejerciciouno.com.iso2b01.testingej1.TestEjercicio1" name="testPrincipal19" time="0"/>
+  <testcase classname="org.isodos.b01.practicados_ejerciciouno.com.iso2b01.testingej1.TestEjercicio1" name="testPrincipal20" time="0"/>
+  <testcase classname="org.isodos.b01.practicados_ejerciciouno.com.iso2b01.testingej1.TestEjercicio1" name="testPrincipal21" time="0.002"/>
+  <testcase classname="org.isodos.b01.practicados_ejerciciouno.com.iso2b01.testingej1.TestEjercicio1" name="testPrincipal22" time="0.001"/>
+  <testcase classname="org.isodos.b01.practicados_ejerciciouno.com.iso2b01.testingej1.TestEjercicio1" name="testPrincipal23" time="0"/>
+  <testcase classname="org.isodos.b01.practicados_ejerciciouno.com.iso2b01.testingej1.TestEjercicio1" name="testPrincipal24" time="0.001"/>
+  <testcase classname="org.isodos.b01.practicados_ejerciciouno.com.iso2b01.testingej1.TestEjercicio1" name="testPrincipal25" time="0"/>
+  <testcase classname="org.isodos.b01.practicados_ejerciciouno.com.iso2b01.testingej1.TestEjercicio1" name="testPrincipal26" time="0"/>
+  <testcase classname="org.isodos.b01.practicados_ejerciciouno.com.iso2b01.testingej1.TestEjercicio1" name="testPrincipal27" time="0"/>
+  <testcase classname="org.isodos.b01.practicados_ejerciciouno.com.iso2b01.testingej1.TestEjercicio1" name="testPrincipal28" time="0"/>
+  <testcase classname="org.isodos.b01.practicados_ejerciciouno.com.iso2b01.testingej1.TestEjercicio1" name="testPrincipal29" time="0.001"/>
+  <testcase classname="org.isodos.b01.practicados_ejerciciouno.com.iso2b01.testingej1.TestEjercicio1" name="testPrincipal30" time="0"/>
+  <testcase classname="org.isodos.b01.practicados_ejerciciouno.com.iso2b01.testingej1.TestEjercicio1" name="testPrincipal31" time="0"/>
+  <testcase classname="org.isodos.b01.practicados_ejerciciouno.com.iso2b01.testingej1.TestEjercicio1" name="testPrincipal32" time="0"/>
+  <testcase classname="org.isodos.b01.practicados_ejerciciouno.com.iso2b01.testingej1.TestEjercicio1" name="testPrincipal33" time="0"/>
+  <testcase classname="org.isodos.b01.practicados_ejerciciouno.com.iso2b01.testingej1.TestEjercicio1" name="testPrincipal34" time="0"/>
+  <testcase classname="org.isodos.b01.practicados_ejerciciouno.com.iso2b01.testingej1.TestEjercicio1" name="testPrincipal35" time="0"/>
+  <testcase classname="org.isodos.b01.practicados_ejerciciouno.com.iso2b01.testingej1.TestEjercicio1" name="testPrincipal36" time="0.001"/>
+  <testcase classname="org.isodos.b01.practicados_ejerciciouno.com.iso2b01.testingej1.TestEjercicio1" name="testPrincipal37" time="0"/>
+  <testcase classname="org.isodos.b01.practicados_ejerciciouno.com.iso2b01.testingej1.TestEjercicio1" name="testPrincipal38" time="0"/>
+  <testcase classname="org.isodos.b01.practicados_ejerciciouno.com.iso2b01.testingej1.TestEjercicio1" name="testPrincipal39" time="0"/>
+  <testcase classname="org.isodos.b01.practicados_ejerciciouno.com.iso2b01.testingej1.TestEjercicio1" name="testPrincipal40" time="0"/>
+  <testcase classname="org.isodos.b01.practicados_ejerciciouno.com.iso2b01.testingej1.TestEjercicio1" name="testPrincipal41" time="0"/>
+  <testcase classname="org.isodos.b01.practicados_ejerciciouno.com.iso2b01.testingej1.TestEjercicio1" name="testPrincipal42" time="0"/>
+  <testcase classname="org.isodos.b01.practicados_ejerciciouno.com.iso2b01.testingej1.TestEjercicio1" name="testPrincipal43" time="0"/>
+  <testcase classname="org.isodos.b01.practicados_ejerciciouno.com.iso2b01.testingej1.TestEjercicio1" name="testPrincipal44" time="0"/>
+  <testcase classname="org.isodos.b01.practicados_ejerciciouno.com.iso2b01.testingej1.TestEjercicio1" name="testPrincipal45" time="0"/>
+  <testcase classname="org.isodos.b01.practicados_ejerciciouno.com.iso2b01.testingej1.TestEjercicio1" name="testPrincipal46" time="0.001"/>
+  <testcase classname="org.isodos.b01.practicados_ejerciciouno.com.iso2b01.testingej1.TestEjercicio1" name="testPrincipal47" time="0"/>
+  <testcase classname="org.isodos.b01.practicados_ejerciciouno.com.iso2b01.testingej1.TestEjercicio1" name="testPrincipal48" time="0"/>
+  <testcase classname="org.isodos.b01.practicados_ejerciciouno.com.iso2b01.testingej1.TestEjercicio1" name="testPrincipal49" time="0"/>
+  <testcase classname="org.isodos.b01.practicados_ejerciciouno.com.iso2b01.testingej1.TestEjercicio1" name="testPrincipal50" time="0"/>
+  <testcase classname="org.isodos.b01.practicados_ejerciciouno.com.iso2b01.testingej1.TestEjercicio1" name="testPrincipal51" time="0.001"/>
+  <testcase classname="org.isodos.b01.practicados_ejerciciouno.com.iso2b01.testingej1.TestEjercicio1" name="testPrincipal52" time="0"/>
+  <testcase classname="org.isodos.b01.practicados_ejerciciouno.com.iso2b01.testingej1.TestEjercicio1" name="testPrincipal53" time="0"/>
+  <testcase classname="org.isodos.b01.practicados_ejerciciouno.com.iso2b01.testingej1.TestEjercicio1" name="testPrincipal54" time="0"/>
+</testsuite>

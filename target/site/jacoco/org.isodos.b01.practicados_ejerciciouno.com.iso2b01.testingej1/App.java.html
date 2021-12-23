@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>App.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">JunitExample Maven Webapp</a> &gt; <a href="index.source.html" class="el_package">org.isodos.b01.practicados_ejerciciouno.com.iso2b01.testingej1</a> &gt; <span class="el_source">App.java</span></div><h1>App.java</h1><pre class="source lang-java linenums">package org.isodos.b01.practicados_ejerciciouno.com.iso2b01.testingej1;
+
+<span class="nc" id="L3">public class App {</span>
+
+	public static void main(String[] args) {
+<span class="fc" id="L6">		Persona p = new Persona(true, false, false, true, true);</span>
+<span class="fc" id="L7">		Tiempo t = new Tiempo(32, 10, false, false, false);</span>
+<span class="fc" id="L8">		Restricciones r = new Restricciones(80, 100, false);</span>
+<span class="fc" id="L9">		Principal(p, t, r);</span>
+<span class="fc" id="L10">	}</span>
+
+	public static boolean Principal(Persona p, Tiempo t, Restricciones r) {
+		boolean seguir;
+<span class="pc bpc" id="L14" title="1 of 2 branches missed.">		if (!Actividades(p)) {</span>
+<span class="nc" id="L15">			seguir = false;</span>
+<span class="nc" id="L16">			System.out.println(&quot;No se puede realizar ninguna actividad&quot;);</span>
+		} else {
+<span class="fc" id="L18">			seguir = true;</span>
+<span class="pc bpc" id="L19" title="1 of 2 branches missed.">			if (quedarseCasa(p, t)) {</span>
+<span class="nc" id="L20">				System.out.println(&quot;Lo mejor es quedarse en casa&quot;);</span>
+<span class="fc bfc" id="L21" title="All 2 branches covered.">			} else if (irEsquiar(p, t, r)) {</span>
+<span class="fc" id="L22">				System.out.println(&quot;Se recomineda ir a esquiar&quot;);</span>
+<span class="fc bfc" id="L23" title="All 2 branches covered.">			} else if (hacerSenderismo(p, t, r)) {</span>
+<span class="fc" id="L24">				System.out.println(&quot;Se recomienda hacer senderismo&quot;);</span>
+<span class="fc bfc" id="L25" title="All 2 branches covered.">			} else if (hacerTurismo(p, t, r)) {</span>
+<span class="fc" id="L26">				System.out.println(&quot;Se recomineda hacer turismo&quot;);</span>
+<span class="fc bfc" id="L27" title="All 2 branches covered.">			} else if (irCanas(p, t, r)) {</span>
+<span class="fc" id="L28">				System.out.println(&quot;Se recomineda ir de ca�as&quot;);</span>
+<span class="fc bfc" id="L29" title="All 2 branches covered.">			} else if (irPlayaPiscina(p, t, r)) {</span>
+<span class="fc" id="L30">				System.out.println(&quot;Se recomienda ir a la playa&quot;);</span>
+<span class="fc bfc" id="L31" title="All 2 branches covered.">				if (r.getAforoActual() &lt; r.getAforoPermitido()) {</span>
+<span class="fc" id="L32">					System.out.println(&quot;Se recomienda ir a la piscina&quot;);</span>
+				}
+			}
+
+		}
+<span class="fc" id="L37">		return seguir;</span>
+	}
+
+	public static boolean Actividades(Persona p) {
+		boolean hacer;
+<span class="pc bpc" id="L42" title="5 of 10 branches missed.">		if (p.isSano() &amp;&amp; !p.isSintomas() &amp;&amp; p.isCovid() &amp;&amp; p.isCartilla() &amp;&amp; !p.isContacto()) {</span>
+<span class="fc" id="L43">			hacer = true;</span>
+		} else {
+<span class="nc" id="L45">			hacer = false;</span>
+		}
+<span class="fc" id="L47">		return hacer;</span>
+	}
+
+	public static boolean quedarseCasa(Persona p, Tiempo t) {
+		boolean hacer;
+<span class="pc bpc" id="L52" title="3 of 8 branches missed.">		if (t.getTemperatura() &lt; 0 &amp;&amp; t.getHumedad() &lt; 15 &amp;&amp; (t.isAgua() || t.isNieve())) {</span>
+<span class="nc" id="L53">			hacer = true;</span>
+		} else {
+<span class="fc" id="L55">			hacer = false;</span>
+		}
+<span class="fc" id="L57">		return hacer;</span>
+	}
+
+	public static boolean irEsquiar(Persona p, Tiempo t, Restricciones r) {
+		boolean hacer;
+<span class="pc bpc" id="L62" title="3 of 8 branches missed.">		if (t.getTemperatura() &lt; 0 &amp;&amp; t.getHumedad() &lt; 15 &amp;&amp; (!t.isAgua() &amp;&amp; !t.isNieve())</span>
+<span class="pc bpc" id="L63" title="1 of 2 branches missed.">				&amp;&amp; (r.getAforoActual() &lt; r.getAforoPermitido())) {</span>
+<span class="fc" id="L64">			hacer = true;</span>
+		} else {
+<span class="fc" id="L66">			hacer = false;</span>
+		}
+<span class="fc" id="L68">		return hacer;</span>
+	}
+
+	public static boolean hacerSenderismo(Persona p, Tiempo t, Restricciones r) {
+		boolean hacer;
+<span class="pc bpc" id="L73" title="2 of 6 branches missed.">		if (t.getTemperatura() &gt;= 0 &amp;&amp; t.getTemperatura() &lt; 15 &amp;&amp; !t.isAgua()</span>
+<span class="pc bpc" id="L74" title="1 of 2 branches missed.">				&amp;&amp; (r.getAforoActual() &lt; r.getAforoPermitido())) {</span>
+<span class="fc" id="L75">			hacer = true;</span>
+		} else {
+<span class="fc" id="L77">			hacer = false;</span>
+		}
+<span class="fc" id="L79">		return hacer;</span>
+	}
+
+	public static boolean hacerTurismo(Persona p, Tiempo t, Restricciones r) {
+		boolean hacer;
+<span class="pc bpc" id="L84" title="4 of 10 branches missed.">		if (t.getTemperatura() &gt;= 15 &amp;&amp; t.getTemperatura() &lt; 25 &amp;&amp; !t.isAgua() &amp;&amp; !t.isNublado() &amp;&amp; t.getHumedad() &lt; 60</span>
+<span class="pc bpc" id="L85" title="1 of 2 branches missed.">				&amp;&amp; (r.getAforoActual() &lt; r.getAforoPermitido())) {</span>
+<span class="fc" id="L86">			hacer = true;</span>
+		} else {
+<span class="fc" id="L88">			hacer = false;</span>
+		}
+<span class="fc" id="L90">		return hacer;</span>
+	}
+
+	public static boolean irCanas(Persona p, Tiempo t, Restricciones r) {
+		boolean hacer;
+<span class="pc bpc" id="L95" title="2 of 6 branches missed.">		if (t.getTemperatura() &gt;= 25 &amp;&amp; t.getTemperatura() &lt; 35 &amp;&amp; !t.isAgua()</span>
+<span class="pc bpc" id="L96" title="1 of 2 branches missed.">				&amp;&amp; (r.getAforoActual() &lt; r.getAforoPermitido())) {</span>
+<span class="fc" id="L97">			hacer = true;</span>
+		} else {
+<span class="fc" id="L99">			hacer = false;</span>
+		}
+<span class="fc" id="L101">		return hacer;</span>
+	}
+
+	public static boolean irPlayaPiscina(Persona p, Tiempo t, Restricciones r) {
+		boolean hacer;
+<span class="pc bpc" id="L106" title="1 of 4 branches missed.">		if (t.getTemperatura() &gt; 30 &amp;&amp; !t.isAgua()) {</span>
+<span class="fc" id="L107">			hacer = true;</span>
+		} else {
+<span class="fc" id="L109">			hacer = false;</span>
+		}
+<span class="fc" id="L111">		return hacer;</span>
+	}
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.6.202009150832</span></div></body></html>
